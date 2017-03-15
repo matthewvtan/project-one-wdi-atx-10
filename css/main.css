@@ -7,10 +7,6 @@ body {
     transition: background-color 500ms linear;
 }
 
-body.scrolledAbout {
-    background-color: rgb(172,163,223);
-}
-
 a{
   text-decoration: none;
   color: white;
@@ -29,13 +25,43 @@ h1{
   letter-spacing: 10px;
 }
 
-.navbar {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
+input {
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: rgb(0,98,148);
+  width: 400px;
+  height: 50px;
+  background: transparent;
+  border-bottom: 3px solid rgb(0,98,148);
+  padding-left: 15px;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+textarea{
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  color: rgb(0,98,148);
+  border: 0;
+  border-bottom: 3px solid rgb(0,98,148);
+  outline: none;
+  padding-left: 15px;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+button{
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  background-color: rgb(0,98,148);
+  color: rgb(255, 255, 255);
+  padding: 5px 18px;
+  border-radius: 50px;
+  border: 0;
+  letter-spacing: 3px;
 }
 
 a.headerHover{
@@ -48,12 +74,16 @@ a.headerHover:hover{
 }
 
 h1.header{
-  margin-right: 0;
-  margin-bottom: 25px;
 }
 
-nav{
-  float: right;
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navWrapper{
+  position: fixed;
 }
 
 ul{
@@ -68,7 +98,7 @@ li{
 
 li a{
   font-family: 'Space Mono', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
   letter-spacing: 5px;
@@ -78,8 +108,8 @@ li a{
 
 li.active a.homeLink{
   color: rgb(0,98,148);
-  border-bottom: 4px solid rgb(0,98,148);
-  border-top: 4px solid rgb(0,98,148);
+  border-bottom: 3px solid rgb(0,98,148);
+  border-top: 3px solid rgb(0,98,148);
 
 }
 
@@ -92,44 +122,44 @@ li.active a.aboutLink{
 
 li.active a.projectLink{
   color: rgb(0,98,148);
-  border-bottom: 4px solid rgb(0,98,148);
-  border-top: 4px solid rgb(0,98,148);
+  border-bottom: 3px solid rgb(0,98,148);
+  border-top: 3px solid rgb(0,98,148);
 
 }
 
 li.active a.contactLink{
   color: rgb(0,98,148);
-  border-bottom: 4px solid rgb(0,98,148);
-  border-top: 4px solid rgb(0,98,148);
+  border-bottom: 3px solid rgb(0,98,148);
+  border-top: 3px solid rgb(0,98,148);
 }
 
 a.homeLink:hover{
   text-decoration: none;
   color: rgb(186,222,245);
-  border-bottom: 4px solid rgb(186,222,245);
-  border-top: 4px solid rgb(186,222,245);
+  border-bottom: 3px solid rgb(186,222,245);
+  border-top: 3px solid rgb(186,222,245);
 
 }
 
 a.aboutLink:hover{
   text-decoration: none;
   color: rgb(172,163,223);
-  border-bottom: 4px solid rgb(172,163,223);
-  border-top: 4px solid rgb(172,163,223);
+  border-bottom: 3px solid rgb(172,163,223);
+  border-top: 3px solid rgb(172,163,223);
 }
 
 a.projectLink:hover{
   text-decoration: none;
   color: rgb(249,192,197);
-  border-bottom: 4px solid rgb(249,192,197);
-  border-top: 4px solid rgb(249,192,197);
+  border-bottom: 3px solid rgb(249,192,197);
+  border-top: 3px solid rgb(249,192,197);
 }
 
 a.contactLink:hover{
   text-decoration: none;
   color: rgb(255,234,126);
-  border-bottom: 4px solid rgb(255,234,126);
-  border-top: 4px solid rgb(255,234,126);
+  border-bottom: 3px solid rgb(255,234,126);
+  border-top: 3px solid rgb(255,234,126);
 }
 
 .project{
@@ -160,18 +190,12 @@ position: relative;
 
 span.t{
   color: rgb(0,98,148);
-  position: absolute;
-   top: 20px;
-   right: 10px;
-   left: 375px;
+
 }
 
 span.dot{
   color: rgb(0,98,148);
-  position: absolute;
-  top: 20px;
-  right: 0;
-  left: 400px;
+
 }
 
 
@@ -180,22 +204,35 @@ span.dot{
   max-height: 100%;
 }
 
+.contentRow{
+  height: 100vh;
+  max-width: 35vw;
+  margin: 0 auto;
+}
 
+.contentRowAbout{
+  height: 80vh;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.contentRowProjects{
+  margin-top: 100px;
+}
+
+.contentRowContact{
+  max-width: 35vw;
+  max-height: 100vw;
+  margin: 0 auto;
+}
 
  .contentOne{
-  margin-top: -200px;
-  margin-bottom: 10px;
-  width: 550px;
-  height: 600px;
-  z-index: 1;
+
  }
 
  .contentTwo{
-  margin-top: -200px;
-  margin-left: -25px;
   width: 400px;
   height: 561px;
-  z-index: 0;
  }
 
 .textBoxOne{
@@ -209,39 +246,45 @@ span.dot{
   /*color: rgb(0,98,148);*/
   color: rgb(0,98,148);
   letter-spacing: 1px;
-  margin-left: 200px;
-  text-align: right;
+  text-align: left;
 }
 
 .bioText{
-  font-size: 12px;
+  font-size: 1em;
   padding: 0;
   font-family: 'Space Mono', monospace;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 32px;
   /*color: rgb(0,98,148);*/
   color: rgb(0,98,148);
   letter-spacing: 1px;
   text-align: left;
+  margin: 0 auto;
 }
 
 .headlineOne{
   font-family: 'Poppins', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 4px;
   color: rgb(0,98,148);
+}
+
+.aboutMeWhiteSpace{
 }
 
 img{
   border: .5px solid rgb(0,98,148);
 }
 
-#carouselProject{
-  max-width: 50%;
-  margin: 0 auto;
+::-webkit-input-placeholder{
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: rgba(0,98,148,.5);
 }
 
-.carousel-inner{
-  align-content: center;
+::-webkit-textarea-placeholder{
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: rgba(0,98,148,.5);
 }

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jq.js"></script>
     <script src="js/main.js"></script>
@@ -14,17 +13,11 @@
   </head>
 <!-- B O D Y - B E G I N S - H E R E -->
   <body>
-
 <!-- H E A D E R - B E G I N S - H E R E -->
     <header>
       <div class="container-fluid">
 <!-- H E A D E R / N A V -->
-      <div class="row col-md-12">
-        <div class="col-md-6">
-          <div class="whiteSpace">
-
-          </div>
-        </div>
+      <div class="rowOne">
       <div class="col-md-6">
             <h1 class="header">
               <a href="#" class="headerHover"><div class="matt">matt </div>
@@ -33,6 +26,7 @@
               </a>
             </h1>
             <nav class="navbar">
+              <div class="navWrapper">
               <ul>
                 <li class="active">
                   <a href="index.html" class="homeLink" id="homeTheme">home.</a>
@@ -46,77 +40,74 @@
                 <li>
                   <a href="pages/contact.html" class="contactLink" id="contactTheme">contact.</a>
                 </li>
+              </div>
               </ul>
             </nav>
-          </div>
+      </div>
+      </div>
+      </div>
       </header>
 <!-- R O W - T W O - B E G I N S - H E R E -->
         <div class="row contentRow">
-          <div class="col-md-7 contentOne">
-            <div class="textBoxOne">
+          <div class="col-md-1 contentOne">
+
+          </div>
+          <div class="col-md-11 contentTwo">
+            <img src="images/profilepic1.png" alt="profile picture" /><br />
+            <div class="textBoxOne"><br />
               <span class="headlineOne">Matthew Tan</span><br /><br />
               Web Developer // Graphic Designer
             </div>
           </div>
-          <div class="col-md-5 contentTwo">
-            <img src="images/profilepic1.png" alt="profile picture">
-            <br /><br />
-            <div class="bioText">
-              I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
-            </div>
-          </div>
         </div>
+        <!-- R O W - T H R E E - B E G I N S - H E R E / A B O U T - M E -->
+          <div class="row contentRowAbout">
+            <div class="col-md-3 aboutMeWhiteSpace">
+              </div>
+            <div class="col-md-4 aboutMeContent">
+              <span class="headlineOne">
+                about me
+              </span><br /><br />
+              <span class="bioText">
+                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
+              </span>
+            </div>
+            <div class="col-md-5">
 
-        <!-- R O W - T W O - B E G I N S - H E R E / A B O U T - M E -->
-        <br /><br><br>
-          <div class="row contentRow">
-            <div class="col-md-7 contentOne">
-              <div class="textBoxOne">
-                <span class="headlineOne">Matthew Tan</span><br /><br />
-                Web Developer // Graphic Designer
-              </div>
-            </div>
-            <div class="col-md-5 contentTwo">
-              <img src="images/profilepic1.png" alt="profile picture">
-              <br /><br />
-              <div class="bioText">
-                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
-              </div>
             </div>
           </div>
-          <!-- R O W - T H R E E - B E G I N S - H E R E / P R O J E C T S -->
-          <div class="row contentRow">
-            <div class="col-md-7 contentOne">
-              <div class="textBoxOne">
-                <span class="headlineOne">Matthew Tan</span><br /><br />
-                Web Developer // Graphic Designer
-              </div>
+          <br /><br /><br />
+          <!-- R O W - F O U R - B E G I N S - H E R E / P R O J E C T S -->
+          <div class="row contentRowProjects">
+            <div class="col-md-4">
+
             </div>
-            <div class="col-md-5 contentTwo">
-              <img src="images/profilepic1.png" alt="profile picture">
-              <br /><br />
-              <div class="bioText">
-                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
-              </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
             </div>
           </div>
-<!-- R O W - F O U R - B E G I N S - H E R E / C O N T A C T - F O R M -->
-          <div class="row contentRow">
-            <div class="col-md-7 contentOne">
-              <div class="textBoxOne">
-                <span class="headlineOne">Matthew Tan</span><br /><br />
-                Web Developer // Graphic Designer
-              </div>
+<!-- R O W - F I V E - B E G I N S - H E R E / C O N T A C T - F O R M -->
+          <div class="row contentRowContact">
+            <div class="col-md-4">
+              <form>
+                <input type="text" name="firstname" placeholder="first name"><br><br />
+                <input type="text" name="lastname" placeholder="last name"><br /><br />
+                <input type="text" name="phonenumber" placeholder="phone number"><br><br />
+                <input type="text" name="email" placeholder="email"><br /><br />
+                <textarea name="message" placeholder="what did you want to know?" rows="8" cols="55"></textarea><br /><br />
+                <button>submit</button>
+<br /><br /><br /><br /><br />
+              </form>
+<!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
             </div>
-            <div class="col-md-5 contentTwo">
-              <img src="images/profilepic1.png" alt="profile picture">
-              <br /><br />
-              <div class="bioText">
-                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
-              </div>
+            <div class="col-md-4">
+FOOTER GOES HERE
             </div>
           </div>
 
-      </div>
+    </div>
   </body>
 </html>
