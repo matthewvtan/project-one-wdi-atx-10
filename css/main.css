@@ -162,32 +162,6 @@ a.contactLink:hover{
   border-top: 3px solid rgb(255,234,126);
 }
 
-.project{
-position: relative;
-  top: 0;
-  left: 127px;
-  right: 0;
-}
-
-.about{
-  position: relative;
-    top: 0;
-    left: 175px;
-}
-
-.matt{
-  position: relative;
-  top: 0;
-  left: 175px;
-}
-
-.contact{
-  position: relative;
-  top: 0;
-  left: 108px;
-  right: 0;
-}
-
 span.t{
   color: rgb(0,98,148);
 
@@ -198,22 +172,26 @@ span.dot{
 
 }
 
-
-.whiteSpace{
-  max-width: 100%;
-  max-height: 100%;
+.rowOne{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .contentRow{
-  height: 100vh;
-  max-width: 35vw;
+  height: 80vh;
+  max-width: 75vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 16%;
 }
 
 .contentRowAbout{
   height: 80vh;
   width: 50vw;
   margin: 0 auto;
+  padding-top: 16%;
 }
 
 .contentRowProjects{
@@ -224,6 +202,7 @@ span.dot{
   max-width: 35vw;
   max-height: 100vw;
   margin: 0 auto;
+  padding-top: 3%;
 }
 
  .contentOne{
@@ -239,7 +218,7 @@ span.dot{
   font-size: 12px;
   /*border-right: 5px solid rgb(0,98,148);
   border-top: 5px solid rgb(0,98,148);*/
-  padding: 18px;
+  padding-right: 20px;
   font-family: 'Space Mono', monospace;
   font-weight: 400;
   line-height: 20px;
@@ -247,6 +226,7 @@ span.dot{
   color: rgb(0,98,148);
   letter-spacing: 1px;
   text-align: left;
+
 }
 
 .bioText{

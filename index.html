@@ -15,52 +15,48 @@
   <body>
 <!-- H E A D E R - B E G I N S - H E R E -->
     <header>
-      <div class="container-fluid">
 <!-- H E A D E R / N A V -->
       <div class="rowOne">
-      <div class="col-md-6">
-            <h1 class="header">
-              <a href="#" class="headerHover"><div class="matt">matt </div>
-                <span class="t">t</span>
-                <span class="dot">.</span>
-              </a>
+      <div class="headerWrapper">
             </h1>
             <nav class="navbar">
               <div class="navWrapper">
               <ul>
                 <li class="active">
-                  <a href="index.html" class="homeLink" id="homeTheme">home.</a>
+                  <a href="#home" class="homeLink" id="homeTheme">home.</a>
                 </li>
                 <li>
-                  <a href="pages/about.html" class="aboutLink" id="aboutTheme">about.</a>
+                  <a href="#about" class="aboutLink" id="aboutTheme">about.</a>
                 </li>
                 <li>
-                  <a href="pages/projects.html" class="projectLink" id="projectsTheme">projects.</a>
+                  <a href="#project" class="projectLink" id="projectsTheme">projects.</a>
                 </li>
                 <li>
-                  <a href="pages/contact.html" class="contactLink" id="contactTheme">contact.</a>
+                  <a href="#contact" class="contactLink" id="contactTheme">contact.</a>
                 </li>
               </div>
               </ul>
             </nav>
       </div>
       </div>
-      </div>
+
       </header>
 <!-- R O W - T W O - B E G I N S - H E R E -->
-        <div class="row contentRow">
-          <div class="col-md-1 contentOne">
-
-          </div>
-          <div class="col-md-11 contentTwo">
-            <img src="images/profilepic1.png" alt="profile picture" /><br />
+      <section id="home">
+        <div class="contentRow">
+          <div class="contentOne">
             <div class="textBoxOne"><br />
               <span class="headlineOne">Matthew Tan</span><br /><br />
               Web Developer // Graphic Designer
             </div>
           </div>
+          <div class="contentTwo">
+            <img src="images/profilepic1.png" alt="profile picture" /><br />
+          </div>
         </div>
+      </section>
         <!-- R O W - T H R E E - B E G I N S - H E R E / A B O U T - M E -->
+        <section id="about">
           <div class="row contentRowAbout">
             <div class="col-md-3 aboutMeWhiteSpace">
               </div>
@@ -72,12 +68,11 @@
                 I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
               </span>
             </div>
-            <div class="col-md-5">
-
-            </div>
           </div>
+        </section>
           <br /><br /><br />
           <!-- R O W - F O U R - B E G I N S - H E R E / P R O J E C T S -->
+        <section id="project">
           <div class="row contentRowProjects">
             <div class="col-md-4">
 
@@ -89,7 +84,9 @@
 
             </div>
           </div>
+        </section>
 <!-- R O W - F I V E - B E G I N S - H E R E / C O N T A C T - F O R M -->
+        <section id="contact">
           <div class="row contentRowContact">
             <div class="col-md-4">
               <form>
@@ -97,17 +94,18 @@
                 <input type="text" name="lastname" placeholder="last name"><br /><br />
                 <input type="text" name="phonenumber" placeholder="phone number"><br><br />
                 <input type="text" name="email" placeholder="email"><br /><br />
-                <textarea name="message" placeholder="what did you want to know?" rows="8" cols="55"></textarea><br /><br />
+                <textarea name="message" placeholder="what did you want to know?" rows="8" cols="50"></textarea><br /><br />
                 <button>submit</button>
 <br /><br /><br /><br /><br />
               </form>
-<!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
             </div>
+          </div>
+        </section>
+<!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
+
             <div class="col-md-4">
 FOOTER GOES HERE
             </div>
-          </div>
 
-    </div>
   </body>
 </html>
