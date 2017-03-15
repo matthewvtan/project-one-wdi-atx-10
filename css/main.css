@@ -1,0 +1,247 @@
+body {
+    background-color: rgb(186,222,245);
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+body.scrolledAbout {
+    background-color: rgb(172,163,223);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 54px;
+  font-weight: 400;
+  color: rgb(255,255,255);
+  letter-spacing: 10px;
+}
+
+.navbar {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+}
+
+a.headerHover{
+  text-decoration: none;
+  color: white;
+}
+
+a.headerHover:hover{
+  color: rgb(0, 98, 148);
+}
+
+h1.header{
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+
+nav{
+  float: right;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li{
+    margin-bottom: 25px;
+}
+
+li a{
+  font-family: 'Space Mono', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 5px;
+  text-decoration: none;
+  padding-bottom: 2px;
+  }
+
+li.active a.homeLink{
+  color: rgb(0,98,148);
+  border-bottom: 4px solid rgb(0,98,148);
+  border-top: 4px solid rgb(0,98,148);
+
+}
+
+li.active a.aboutLink{
+  color: rgb(0,98,148);
+  border-bottom: 3px solid rgb(0,98,148);
+  border-top: 3px solid rgb(0,98,148);
+
+}
+
+li.active a.projectLink{
+  color: rgb(0,98,148);
+  border-bottom: 4px solid rgb(0,98,148);
+  border-top: 4px solid rgb(0,98,148);
+
+}
+
+li.active a.contactLink{
+  color: rgb(0,98,148);
+  border-bottom: 4px solid rgb(0,98,148);
+  border-top: 4px solid rgb(0,98,148);
+}
+
+a.homeLink:hover{
+  text-decoration: none;
+  color: rgb(186,222,245);
+  border-bottom: 4px solid rgb(186,222,245);
+  border-top: 4px solid rgb(186,222,245);
+
+}
+
+a.aboutLink:hover{
+  text-decoration: none;
+  color: rgb(172,163,223);
+  border-bottom: 4px solid rgb(172,163,223);
+  border-top: 4px solid rgb(172,163,223);
+}
+
+a.projectLink:hover{
+  text-decoration: none;
+  color: rgb(249,192,197);
+  border-bottom: 4px solid rgb(249,192,197);
+  border-top: 4px solid rgb(249,192,197);
+}
+
+a.contactLink:hover{
+  text-decoration: none;
+  color: rgb(255,234,126);
+  border-bottom: 4px solid rgb(255,234,126);
+  border-top: 4px solid rgb(255,234,126);
+}
+
+.project{
+position: relative;
+  top: 0;
+  left: 127px;
+  right: 0;
+}
+
+.about{
+  position: relative;
+    top: 0;
+    left: 175px;
+}
+
+.matt{
+  position: relative;
+  top: 0;
+  left: 175px;
+}
+
+.contact{
+  position: relative;
+  top: 0;
+  left: 108px;
+  right: 0;
+}
+
+span.t{
+  color: rgb(0,98,148);
+  position: absolute;
+   top: 20px;
+   right: 10px;
+   left: 375px;
+}
+
+span.dot{
+  color: rgb(0,98,148);
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 400px;
+}
+
+
+.whiteSpace{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+ .contentOne{
+  margin-top: -200px;
+  margin-bottom: 10px;
+  width: 550px;
+  height: 600px;
+  z-index: 1;
+ }
+
+ .contentTwo{
+  margin-top: -200px;
+  margin-left: -25px;
+  width: 400px;
+  height: 561px;
+  z-index: 0;
+ }
+
+.textBoxOne{
+  font-size: 12px;
+  /*border-right: 5px solid rgb(0,98,148);
+  border-top: 5px solid rgb(0,98,148);*/
+  padding: 18px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  line-height: 20px;
+  /*color: rgb(0,98,148);*/
+  color: rgb(0,98,148);
+  letter-spacing: 1px;
+  margin-left: 200px;
+  text-align: right;
+}
+
+.bioText{
+  font-size: 12px;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  line-height: 20px;
+  /*color: rgb(0,98,148);*/
+  color: rgb(0,98,148);
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.headlineOne{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: rgb(0,98,148);
+}
+
+img{
+  border: .5px solid rgb(0,98,148);
+}
+
+#carouselProject{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-inner{
+  align-content: center;
+}
