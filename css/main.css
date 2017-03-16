@@ -9,6 +9,12 @@ body {
 
 a{
   text-decoration: none;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 5px;
+  padding-bottom: 2px;
   color: white;
   -o-transition:.4s;
   -ms-transition:.4s;
@@ -96,7 +102,7 @@ li{
     margin-bottom: 25px;
 }
 
-li a{
+/*li a{
   font-family: 'Space Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -104,7 +110,8 @@ li a{
   letter-spacing: 5px;
   text-decoration: none;
   padding-bottom: 2px;
-  }
+  }*/
+
 
 li.active a.homeLink{
   color: rgb(0,98,148);
@@ -195,7 +202,10 @@ span.dot{
 }
 
 .contentRowProjects{
-  margin-top: 100px;
+  height: 100vh;
+  width: 50vw;
+  margin: 0 auto;
+  padding-top: 15%;
 }
 
 .contentRowContact{
@@ -216,17 +226,13 @@ span.dot{
 
 .textBoxOne{
   font-size: 12px;
-  /*border-right: 5px solid rgb(0,98,148);
-  border-top: 5px solid rgb(0,98,148);*/
   padding-right: 20px;
   font-family: 'Space Mono', monospace;
   font-weight: 400;
   line-height: 20px;
-  /*color: rgb(0,98,148);*/
   color: rgb(0,98,148);
   letter-spacing: 1px;
   text-align: left;
-
 }
 
 .bioText{
@@ -268,3 +274,130 @@ img{
   letter-spacing: 2px;
   color: rgba(0,98,148,.5);
 }
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-caption{
+  text-shadow: none;
+}
+
+.carousel .item{
+  border: 0;
+  min-height: 300px;
+}
+
+
+
+
+/* A N I M A T E . C S S - S T A R T S - H E R E */
+
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+/* A N I M A T E . C S S - E N D S - H E R E */

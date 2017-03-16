@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jq.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <title>About Me</title>
   </head>
 <!-- B O D Y - B E G I N S - H E R E -->
@@ -20,7 +21,7 @@
       <div class="headerWrapper">
             </h1>
             <nav class="navbar">
-              <div class="navWrapper">
+              <div id="navigation" class="navWrapper">
               <ul>
                 <li class="active">
                   <a href="#home" class="homeLink" id="homeTheme">home.</a>
@@ -42,7 +43,8 @@
 
       </header>
 <!-- R O W - T W O - B E G I N S - H E R E -->
-      <section id="home">
+<div id="sections">
+      <div id="home" class="section">
         <div class="contentRow">
           <div class="contentOne">
             <div class="textBoxOne"><br />
@@ -54,13 +56,11 @@
             <img src="images/profilepic1.png" alt="profile picture" /><br />
           </div>
         </div>
-      </section>
+      </div>
         <!-- R O W - T H R E E - B E G I N S - H E R E / A B O U T - M E -->
-        <section id="about">
+        <div id="about" class="section">
           <div class="row contentRowAbout">
-            <div class="col-md-3 aboutMeWhiteSpace">
-              </div>
-            <div class="col-md-4 aboutMeContent">
+            <div class="aboutMeContent">
               <span class="headlineOne">
                 about me
               </span><br /><br />
@@ -69,26 +69,53 @@
               </span>
             </div>
           </div>
-        </section>
+        </div>
           <br /><br /><br />
           <!-- R O W - F O U R - B E G I N S - H E R E / P R O J E C T S -->
-        <section id="project">
-          <div class="row contentRowProjects">
-            <div class="col-md-4">
+        <div id="project" class="section">
+          <div class="contentRowProjects">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-            </div>
-            <div class="col-md-4">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+      	<span class="bioText">Calculator</span>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+      	<span class="bioText">Trash Project</span>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+      	<span class="bioText">Some Other Thing</span>
+      </div>
+    </div>
+  </div>
 
-            </div>
-            <div class="col-md-4">
-
-            </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  </a>
+</div> <!-- Carousel -->
           </div>
-        </section>
+        </div>
 <!-- R O W - F I V E - B E G I N S - H E R E / C O N T A C T - F O R M -->
-        <section id="contact">
+        <div id="contact" class="section">
           <div class="row contentRowContact">
-            <div class="col-md-4">
+            <div class="contactForm">
               <form>
                 <input type="text" name="firstname" placeholder="first name"><br><br />
                 <input type="text" name="lastname" placeholder="last name"><br /><br />
@@ -100,12 +127,12 @@
               </form>
             </div>
           </div>
-        </section>
+        </div>
 <!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
 
-            <div class="col-md-4">
+            <div class="footer">
 FOOTER GOES HERE
             </div>
-
+</div>
   </body>
 </html>
