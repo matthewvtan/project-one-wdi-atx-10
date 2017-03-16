@@ -68,6 +68,16 @@ button{
   border-radius: 50px;
   border: 0;
   letter-spacing: 3px;
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+button:hover{
+  background-color: rgb(255,255,255);
+  color: rgb(0,98,148);
 }
 
 a.headerHover{
@@ -86,9 +96,11 @@ h1.header{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  min-height: 0;
 }
 
 .navWrapper{
+  margin-top: 15%;
   position: fixed;
 }
 
@@ -99,7 +111,7 @@ ul{
 }
 
 li{
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 /*li a{
@@ -113,31 +125,11 @@ li{
   }*/
 
 
-li.active a.homeLink{
+li.activeLink {
   color: rgb(0,98,148);
   border-bottom: 3px solid rgb(0,98,148);
   border-top: 3px solid rgb(0,98,148);
 
-}
-
-li.active a.aboutLink{
-  color: rgb(0,98,148);
-  border-bottom: 3px solid rgb(0,98,148);
-  border-top: 3px solid rgb(0,98,148);
-
-}
-
-li.active a.projectLink{
-  color: rgb(0,98,148);
-  border-bottom: 3px solid rgb(0,98,148);
-  border-top: 3px solid rgb(0,98,148);
-
-}
-
-li.active a.contactLink{
-  color: rgb(0,98,148);
-  border-bottom: 3px solid rgb(0,98,148);
-  border-top: 3px solid rgb(0,98,148);
 }
 
 a.homeLink:hover{
@@ -186,33 +178,33 @@ span.dot{
 }
 
 .contentRow{
-  height: 80vh;
+  height: 100vh;
   max-width: 75vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  padding-top: 16%;
+  padding-top: 15%;
 }
 
 .contentRowAbout{
-  height: 80vh;
-  width: 50vw;
+  height: 100vh;
+  width: 35vw;
   margin: 0 auto;
-  padding-top: 16%;
+  padding-top: 15%;
 }
 
 .contentRowProjects{
   height: 100vh;
   width: 50vw;
   margin: 0 auto;
-  padding-top: 15%;
+  padding-top: 13%;
 }
 
 .contentRowContact{
-  max-width: 35vw;
-  max-height: 100vw;
+  width: 35vw;
+  height: 100vh;
   margin: 0 auto;
-  padding-top: 3%;
+  padding-top: 4%;
 }
 
  .contentOne{
@@ -251,12 +243,9 @@ span.dot{
 .headlineOne{
   font-family: 'Poppins', sans-serif;
   font-size: 3em;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 4px;
   color: rgb(0,98,148);
-}
-
-.aboutMeWhiteSpace{
 }
 
 img{
@@ -287,117 +276,3 @@ img{
   border: 0;
   min-height: 300px;
 }
-
-
-
-
-/* A N I M A T E . C S S - S T A R T S - H E R E */
-
-.animated {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-.animated.flipOutX,
-.animated.flipOutY,
-.animated.bounceIn,
-.animated.bounceOut {
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-@-webkit-keyframes fadeInUpBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-
-@-webkit-keyframes fadeOutUp {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-@keyframes fadeOutUp {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-.fadeOutUp {
-  -webkit-animation-name: fadeOutUp;
-  animation-name: fadeOutUp;
-}
-/* A N I M A T E . C S S - E N D S - H E R E */

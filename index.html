@@ -5,10 +5,11 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jq.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <title>About Me</title>
   </head>
@@ -17,7 +18,7 @@
 <!-- H E A D E R - B E G I N S - H E R E -->
     <header>
 <!-- H E A D E R / N A V -->
-      <div class="rowOne">
+      <div class="rowOne animated" id="navAnimate">
       <div class="headerWrapper">
             </h1>
             <nav class="navbar">
@@ -43,37 +44,36 @@
 
       </header>
 <!-- R O W - T W O - B E G I N S - H E R E -->
-<div id="sections">
       <div id="home" class="section">
         <div class="contentRow">
-          <div class="contentOne">
+          <div class="contentOne animated" id="homeAnimateOne">
             <div class="textBoxOne"><br />
               <span class="headlineOne">Matthew Tan</span><br /><br />
               Web Developer // Graphic Designer
             </div>
           </div>
-          <div class="contentTwo">
-            <img src="images/profilepic1.png" alt="profile picture" /><br />
+          <div class="animated" id="homeAnimateTwo">
+            <img src="images/profilepic1.png" alt="profile picture" />
           </div>
         </div>
       </div>
-        <!-- R O W - T H R E E - B E G I N S - H E R E / A B O U T - M E -->
+<!-- R O W - T H R E E - B E G I N S - H E R E / A B O U T - M E -->
         <div id="about" class="section">
-          <div class="row contentRowAbout">
+          <div class="contentRowAbout animated" id="aboutAnimate">
             <div class="aboutMeContent">
               <span class="headlineOne">
-                about me
+                about.
               </span><br /><br />
               <span class="bioText">
-                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in fullstack web development. Bridging the gap between design / UI/UX / and developing.
+                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in full stack web development and allow me to bridge the gap between designers and developers.
               </span>
             </div>
           </div>
         </div>
-          <br /><br /><br />
           <!-- R O W - F O U R - B E G I N S - H E R E / P R O J E C T S -->
         <div id="project" class="section">
-          <div class="contentRowProjects">
+          <div class="contentRowProjects animated" id="projectAnimate">
+            <span class="headlineOne">projects.</span><br /><br /><br />
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -109,30 +109,31 @@
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
   </a>
-</div> <!-- Carousel -->
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
 <!-- R O W - F I V E - B E G I N S - H E R E / C O N T A C T - F O R M -->
         <div id="contact" class="section">
-          <div class="row contentRowContact">
+          <div class="contentRowContact animated" id="contactAnimate">
             <div class="contactForm">
+              <div class="headlineOne">
+                contact.
+              </div><br /><br />
               <form>
                 <input type="text" name="firstname" placeholder="first name"><br><br />
                 <input type="text" name="lastname" placeholder="last name"><br /><br />
                 <input type="text" name="phonenumber" placeholder="phone number"><br><br />
                 <input type="text" name="email" placeholder="email"><br /><br />
-                <textarea name="message" placeholder="what did you want to know?" rows="8" cols="50"></textarea><br /><br />
+                <textarea name="message" placeholder="what did you want to know?" rows="4" cols="50"></textarea><br /><br />
                 <button>submit</button>
-<br /><br /><br /><br /><br />
               </form>
             </div>
           </div>
         </div>
 <!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
-
-            <div class="footer">
+<div>
 FOOTER GOES HERE
-            </div>
 </div>
+
   </body>
 </html>
