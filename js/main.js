@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  $("#projectsCarousel").carousel({
+      interval : false,
+  });
+
   // hide our element on page load
   $('#navAnimate').css('opacity', 0);
 
@@ -48,15 +52,15 @@ $(document).ready(function(){
 
   $('#about').waypoint(function() {
     $('body').css('background-color','rgb(200,179,223)');
-  }, { offset: '0' });
+  }, { offset: '25%' });
 
 
   $('#project').waypoint(function() {
     $('body').css('background-color','rgb(249,192,197)');
-  }, { offset: '0' });
+  }, { offset: '25%' });
 
   $('#contact').waypoint(function() {
     $('body').css('background-color','rgb(255,234,126)');
-  }, { offset: '0' });
+  }, { offset: '25%' });
 
 });
