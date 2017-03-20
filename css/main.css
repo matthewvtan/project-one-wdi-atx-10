@@ -7,21 +7,23 @@ body {
     transition: background-color 500ms linear;
 }
 
-a{
+li a{
   text-decoration: none;
   font-family: 'Space Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: white;
   letter-spacing: 5px;
   padding-bottom: 2px;
   color: white;
-  -o-transition:.4s;
-  -ms-transition:.4s;
-  -moz-transition:.4s;
-  -webkit-transition:.4s;
-  transition:.4s;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s ease;
+  white-space: nowrap;
+  width: 0;
 }
+
 
 h1{
   font-family: 'Poppins', sans-serif;
@@ -80,18 +82,6 @@ button:hover{
   color: rgb(0,98,148);
 }
 
-a.headerHover{
-  text-decoration: none;
-  color: white;
-}
-
-a.headerHover:hover{
-  color: rgb(0, 98, 148);
-}
-
-h1.header{
-}
-
 .navbar{
   display: flex;
   flex-direction: row;
@@ -102,6 +92,7 @@ h1.header{
 .navWrapper{
   margin-top: 15%;
   position: fixed;
+  padding: 20px 50px 15px 30px;
 }
 
 ul{
@@ -114,67 +105,35 @@ li{
   margin-bottom: 25px;
 }
 
-/*li a{
-  font-family: 'Space Mono', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-  letter-spacing: 5px;
-  text-decoration: none;
-  padding-bottom: 2px;
-  }*/
-
-
-li.activeLink {
+.activeLink{
   color: rgb(0,98,148);
   border-bottom: 3px solid rgb(0,98,148);
-  border-top: 3px solid rgb(0,98,148);
-
+  pointer-events: none;
+  cursor: default;
 }
 
 a.homeLink:hover{
   text-decoration: none;
   color: rgb(186,222,245);
   border-bottom: 3px solid rgb(186,222,245);
-  border-top: 3px solid rgb(186,222,245);
-
 }
 
 a.aboutLink:hover{
   text-decoration: none;
   color: rgb(172,163,223);
   border-bottom: 3px solid rgb(172,163,223);
-  border-top: 3px solid rgb(172,163,223);
 }
 
 a.projectLink:hover{
   text-decoration: none;
   color: rgb(249,192,197);
   border-bottom: 3px solid rgb(249,192,197);
-  border-top: 3px solid rgb(249,192,197);
 }
 
 a.contactLink:hover{
   text-decoration: none;
   color: rgb(255,234,126);
   border-bottom: 3px solid rgb(255,234,126);
-  border-top: 3px solid rgb(255,234,126);
-}
-
-span.t{
-  color: rgb(0,98,148);
-
-}
-
-span.dot{
-  color: rgb(0,98,148);
-
-}
-
-.rowOne{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 .contentRow{
@@ -195,21 +154,17 @@ span.dot{
 
 .contentRowProjects{
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
   margin: 0 auto;
   padding-top: 13%;
 }
 
 .contentRowContact{
-  width: 35vw;
   height: 100vh;
+  width: 35vw;
   margin: 0 auto;
   padding-top: 4%;
 }
-
- .contentOne{
-
- }
 
  .contentTwo{
   width: 400px;
@@ -249,7 +204,7 @@ span.dot{
 }
 
 img{
-  border: .5px solid rgb(0,98,148);
+  border: 1px solid rgb(0,98,148);
 }
 
 ::-webkit-input-placeholder{
@@ -276,3 +231,5 @@ img{
   border: 0;
   min-height: 300px;
 }
+
+/* SKILLS COLOR: 190, 255, 190 */

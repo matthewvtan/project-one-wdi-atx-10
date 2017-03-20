@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jq.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <title>About Me</title>
@@ -19,23 +19,22 @@
 <!-- H E A D E R - B E G I N S - H E R E -->
     <header>
 <!-- H E A D E R / N A V -->
-      <div class="rowOne animated" id="navAnimate">
+      <div class="animated" id="navAnimate">
       <div class="headerWrapper">
-            </h1>
             <nav class="navbar">
               <div id="navigation" class="navWrapper">
               <ul>
-                <li class="active">
-                  <a href="#home" class="homeLink" id="homeTheme">home.</a>
+                <li>
+                  <a href="#home" class="homeLink activeLink">home.</a>
                 </li>
                 <li>
-                  <a href="#about" class="aboutLink" id="aboutTheme">about.</a>
+                  <a href="#about" class="aboutLink">about.</a>
                 </li>
                 <li>
-                  <a href="#project" class="projectLink" id="projectsTheme">projects.</a>
+                  <a href="#project" class="projectLink">projects.</a>
                 </li>
                 <li>
-                  <a href="#contact" class="contactLink" id="contactTheme">contact.</a>
+                  <a href="#contact" class="contactLink">contact.</a>
                 </li>
               </div>
               </ul>
@@ -45,7 +44,7 @@
 
       </header>
 <!-- R O W - T W O - B E G I N S - H E R E -->
-      <div id="home" class="section">
+<div id="home" class="section">
         <div class="contentRow">
           <div class="contentOne animated" id="homeAnimateOne">
             <div class="textBoxOne"><br />
@@ -66,29 +65,49 @@
                 about.
               </span><br /><br />
               <span class="bioText">
-                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in full stack web development and allow me to bridge the gap between designers and developers.
+                I'm a graphic designer-turned web developer who recently graduated from General Assembly's Web Development Immersive program. My previous work in graphic design and marketing inform my work in full stack web development and allows me to bridge the gap between designers and developers.
               </span>
             </div>
           </div>
         </div>
+<!-- R O W - S K I L L S - B E G I N S - H E R E / S K I L L S -->
+<!--
+<div id="skills" class="section">
+  <div class="contentRowSkills animated" id="skillsAnimate">
+    <div class="contactForm">
+      <div class="headlineOne">
+        contact.
+      </div><br /><br />
+      <form>
+        <input type="text" name="firstname" placeholder="first name"><br><br />
+        <input type="text" name="lastname" placeholder="last name"><br /><br />
+        <input type="text" name="phonenumber" placeholder="phone number"><br><br />
+        <input type="text" name="email" placeholder="email"><br /><br />
+        <textarea name="message" placeholder="what did you want to know?" rows="4" cols="50"></textarea><br /><br />
+        <button>submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+-->
           <!-- R O W - F O U R - B E G I N S - H E R E / P R O J E C T S -->
         <div id="project" class="section">
           <div class="contentRowProjects animated" id="projectAnimate">
             <span class="headlineOne">projects.</span><br /><br /><br />
             <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+  <!-- I N D I C A T O R S -->
   <ol class="carousel-indicators">
     <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#projectsCarousel" data-slide-to="1"></li>
     <li data-target="#projectsCarousel" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+  <!-- C A R O U S E L - W R A P P E R -->
   <div class="carousel-inner">
     <div class="item active">
       <img src="images/gheryOne.png" alt="...">
       <div class="carousel-caption">
-      	<span class="bioText">Freelance Imaginary Project</span>
+      	<span class="bioText">Imaginary Project</span>
       </div>
     </div>
     <div class="item">
@@ -100,15 +119,17 @@
     <div class="item">
       <img src="images/calculatorOne.png" alt="...">
       <div class="carousel-caption">
-      	<span class="bioText">Some Other Thing</span>
+      	<span class="bioText">Javascript Calculator</span>
       </div>
     </div>
   </div>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#projectsCarousel" role="button" data-slide="prev">
+    <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#projectsCarousel" role="button" data-slide="next">
+    <span class="sr-only">Next</span>
   </a>
       </div>
     </div>
@@ -125,7 +146,7 @@
                 <input type="text" name="lastname" placeholder="last name"><br /><br />
                 <input type="text" name="phonenumber" placeholder="phone number"><br><br />
                 <input type="text" name="email" placeholder="email"><br /><br />
-                <textarea name="message" placeholder="what did you want to know?" rows="4" cols="50"></textarea><br /><br />
+                <textarea name="message" placeholder="how can I help you?" rows="4" cols="50"></textarea><br /><br />
                 <button>submit</button>
               </form>
             </div>
@@ -133,7 +154,7 @@
         </div>
 <!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
 <div>
-FOOTER GOES HERE
+.
 </div>
 
   </body>
