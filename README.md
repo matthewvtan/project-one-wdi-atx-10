@@ -30,7 +30,10 @@ Unsolved Problems / Challenges - - - - - -
 ===============================
 
   ~ Mobile Responsive
+
       • Hamburger Menu
+
+      • Home / Review / Contact Sections
 
   ~ Basic Functionality in JS
 
@@ -43,7 +46,9 @@ Unsolved Problems / Challenges - - - - - -
         carousel at top of the viewport
 
   ~ Content Missing
+
       • No social media icons in footer
+
       • No Skills section
 
 ===================

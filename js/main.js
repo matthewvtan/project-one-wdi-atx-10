@@ -33,39 +33,36 @@ $(document).ready(function(){
       paused: false
   });
 
-// C O N T E N T - A N I M A T I O N S - - - - -
+// - - C O N T E N T - A N I M A T I O N S - -
   $('#navAnimate').css('opacity', 0);
 
   $('#navAnimate').waypoint(function() {
       $('#navAnimate').addClass('fadeIn');
     });
 
-// H O M E - A N I M A T E - - - - - - - - - - -
+// - - - - - H O M E - A N I M A T E - - - - -
 
   $('#homeAnimateTwo').css('opacity', 0);
-
-
-
 
   $('#homeAnimateOne').css('opacity', 0);
 
   // }, { offset: '35%' });
 
-// A B O U T - A N I M A T E - - - - - - - - - - -
+// - - - - A B O U T - A N I M A T E - - - -
 
   $('#aboutAnimate').css('opacity', 0);
 
-// P R O J E C T - A N I M A T E - - - - - - - - -
+// - - - P R O J E C T - A N I M A T E - - - -
 
   $('#projectAnimate').css('opacity', 0);
 
 
-  // R E V I E W S - A N I M A T E - - - - - - -
+  // - - - R E V I E W S - A N I M A T E - - -
 
     $('#quotesAnimate').css('opacity', 0);
 
 
-// C O N T A C T - A N I M A T E - - - - - - - - -
+// - - - C O N T A C T - A N I M A T E - - - -
 
   $('#contactAnimate').css('opacity', 0);
 
@@ -73,7 +70,7 @@ $(document).ready(function(){
 // B A C K G R O U N D C O L O R C H A N G E //
 
 
-// - - - - - O P T I O N 2 - D R I E R - - - - -
+// - - - - O P T I O N 2 - D R I E R - - - - -
 
 var setActive = function(id) {
     $('.activeLink').removeClass('activeLink');
@@ -88,7 +85,7 @@ $("#home").waypoint(function(){
         $('#homeAnimateOne').addClass('fadeIn');
       }, { offset: '-.5%' });
 
-// - - - - - - - - - A B O U T - - - - - - - - - - -
+// - - - - - - - A B O U T - - - - - - - -
 
 $("#about").waypoint(function(direction){
     setActive(".aboutLink");
@@ -101,7 +98,7 @@ $("#about").waypoint(function(direction){
       $('#aboutAnimate').addClass('fadeOut');
       $('#aboutAnimate').removeClass('fadeIn');   }
 });
-// - - - - - - - - - P R O J E C T - - - - - - - - - -
+// - - - - - - P R O J E C T - - - - - - -
 
 $("#project").waypoint(function(direction){
     setActive(".projectLink");
@@ -115,7 +112,7 @@ $("#project").waypoint(function(direction){
       $('#projectAnimate').removeClass('fadeIn');   }
 });
 
-// - - - - - - - - - - Q U O T E S - - - - - - - - - - -
+// - - - - - - - Q U O T E S - - - - - - - -
 $("#quotes").waypoint(function(direction){
     setActive(".quotesLink");
     $('body').css('background-color','rgb(186,215,170)');
@@ -127,7 +124,8 @@ $("#quotes").waypoint(function(direction){
       $('#quotesAnimate').addClass('fadeOut');
       $('#quotesAnimate').removeClass('fadeIn');   }
 });
-// - - - - - - - - - C O N T A C T - - - - - - - - - - -
+// - - - - - - C O N T A C T - - - - - - - -
+
 $("#contact").waypoint(function(direction){
     setActive(".contactLink");
     $('body').css('background-color','rgb(255,234,126)');
