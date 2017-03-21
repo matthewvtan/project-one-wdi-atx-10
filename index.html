@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -12,6 +11,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="js/lightbox.js"></script>
     <title>About Me</title>
   </head>
 <!-- B O D Y - B E G I N S - H E R E -->
@@ -22,19 +24,45 @@
       <div class="animated" id="navAnimate">
       <div class="headerWrapper">
             <nav class="navbar">
-              <div id="navigation" class="navWrapper">
+              <!-- <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div> -->
+
+              <div id="navigation" class="navWrapper collapse navbar-collapse">
               <ul>
                 <li>
-                  <a href="#home" class="homeLink activeLink">home.</a>
+                  <a href="#home" class="homeLink activeLink">home.
+                    <span></span>
+                  </a>
                 </li>
                 <li>
-                  <a href="#about" class="aboutLink">about.</a>
+                  <a href="#about" class="aboutLink">about.
+                    <span></span>
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="#skills" class="skillsLink">skills.</a>
+                </li> -->
+                <li>
+                  <a href="#project" class="projectLink">projects.
+                    <span></span>
+                  </a>
                 </li>
                 <li>
-                  <a href="#project" class="projectLink">projects.</a>
+                  <a href="#quotes" class="quotesLink">reviews.
+                    <span></span>
+                  </a>
                 </li>
                 <li>
-                  <a href="#contact" class="contactLink">contact.</a>
+                  <a href="#contact" class="contactLink">contact.
+                    <span></span>
+                  </a>
                 </li>
               </div>
               </ul>
@@ -104,20 +132,24 @@
 
   <!-- C A R O U S E L - W R A P P E R -->
   <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/gheryOne.png" alt="...">
+    <div class="item active"><a href="images/gheryOneLg.png" data-lightbox="image-1" data-title="Very Impressive Project Caption">
+
+      <img src="images/gheryOne.png" alt="..." data-toggle="modal" data-target="ghery"></a>
       <div class="carousel-caption">
       	<span class="bioText">Imaginary Project</span>
       </div>
     </div>
-    <div class="item">
-      <img src="images/ratesOne.png" alt="...">
+
+    <div class="item"><a href="images/ratesOneLg.png" data-lightbox="image-2" data-title="Print Design for Rates and Conditions for Space Studios in Austin, TX">
+      <img src="images/ratesOne.png" alt="..." data-toggle="modal" data-target="spaceStudios"></a>
       <div class="carousel-caption">
       	<span class="bioText">Space Studios Poster Design</span>
       </div>
     </div>
+
     <div class="item">
-      <img src="images/calculatorOne.png" alt="...">
+      <a href="images/CalculatorOneLg.png" data-lightbox="image-3" data-title="One Hour Calcuator Hackathon for General Assembly Web Development Immersive">
+      <img src="images/calculatorOne.png" alt="..."></a>
       <div class="carousel-caption">
       	<span class="bioText">Javascript Calculator</span>
       </div>
@@ -134,6 +166,33 @@
       </div>
     </div>
   </div>
+
+
+
+  <!-- T E S T I M O N I A L S -->
+  <div id="quotes" class="section">
+    <div id="quotesAnimate" class="animated contentRowQuotes">
+      <div class="headlineOne">
+reviews.
+</div><br /><br />
+
+        <div class="quote" id="quote-1">
+          I was rooting for you, we were all rooting for you! How dare you! Learn something from this! When you go to bed at night, you lay there and you take responsibility for yourself - because nobody's going to take responsibility for you.<br /><br />
+          <span class="quoteBy">Tyra Banks</span>
+        </div>
+
+        <div class="quote" id="quote-2">
+          This is a testimonial by a very professional person. I am saying good things about Matt... because this is a testimonial... And it's real.<br /><br />
+          <span class="quoteBy">Important Qualified Person</span>
+        </div>
+
+        <div class="quote" id="quote-3">
+          Yeah bro, Matt is totally the dopest there is for sure. Yolo Swag 420 Blaze It It's Lit On Fleek.
+        <br /><br />
+        <span class="quoteBy">Ronak S.</span>
+      </div>
+  </div>
+</div>
 <!-- R O W - F I V E - B E G I N S - H E R E / C O N T A C T - F O R M -->
         <div id="contact" class="section">
           <div class="contentRowContact animated" id="contactAnimate">
@@ -152,10 +211,12 @@
             </div>
           </div>
         </div>
-<!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
-<div>
-.
-</div>
 
+<!-- F O O T E R - B E G I N S - H E R E / S O C I A L - M E D I A -->
+<footer>
+  <div class="footer">
+This is where the footer goes at the end of the page lmaoooo.
+</div>
+</footer>
   </body>
 </html>

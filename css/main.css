@@ -7,10 +7,10 @@ body {
     transition: background-color 500ms linear;
 }
 
-li a{
+nav li a{
   text-decoration: none;
   font-family: 'Space Mono', sans-serif;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 400;
   letter-spacing: 5px;
   padding-bottom: 2px;
@@ -24,6 +24,98 @@ li a{
   width: 0;
 }
 
+a:visited{
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:480px){
+  .headlineOne{
+    font-size: 1.8em;
+  }
+  .bioText{
+    font-size: .8em;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(0,98,148);
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .contentRowAbout{
+    height: 100%;
+    min-width: 80%;
+    margin: 0 auto;
+  }
+  .contentRowProject{
+    height: 100%;
+    min-width: 80%;
+    margin: 0 auto;
+  }
+  .contentRowContact{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4%;
+  }
+  .contentRowQuotes{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.quote{
+    font-size: .5em;
+    padding: 0;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+    line-height: .8em;
+    color: rgb(0,98,148);
+    letter-spacing: .5px;
+    text-align: left;
+  }
+
+  input {
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(0,98,148);
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border-bottom: 3px solid rgb(0,98,148);
+    padding-left: 0;
+    letter-spacing: 2px;
+    outline: none;
+  }
+
+  textarea{
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: rgb(0,98,148);
+    border: 0;
+    border-bottom: 3px solid rgb(0,98,148);
+    outline: none;
+    padding-left: 0;
+    letter-spacing: 2px;
+    line-height: 32px;
+  }
+.contentRowContact{
+  max-width: 100%;
+}
+
+
+}
 
 h1{
   font-family: 'Poppins', sans-serif;
@@ -136,6 +228,12 @@ a.contactLink:hover{
   border-bottom: 3px solid rgb(255,234,126);
 }
 
+a.quotesLink:hover{
+  text-decoration: none;
+  color: rgb(69,84,65);
+  border-bottom: 3px solid rgb(69,84,65);
+}
+
 .contentRow{
   height: 100vh;
   max-width: 75vw;
@@ -188,7 +286,6 @@ a.contactLink:hover{
   font-family: 'Space Mono', monospace;
   font-weight: 400;
   line-height: 32px;
-  /*color: rgb(0,98,148);*/
   color: rgb(0,98,148);
   letter-spacing: 1px;
   text-align: left;
@@ -204,7 +301,7 @@ a.contactLink:hover{
 }
 
 img{
-  border: 1px solid rgb(0,98,148);
+  border: 1.5px dotted rgb(0,98,148);
 }
 
 ::-webkit-input-placeholder{
@@ -232,4 +329,49 @@ img{
   min-height: 300px;
 }
 
-/* SKILLS COLOR: 190, 255, 190 */
+div.quote{
+  font-size: 1.2em;
+  padding: 0;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgb(0,98,148);
+  letter-spacing: .5px;
+  text-align: left;
+}
+
+.contentRowQuotes{
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 13%;
+}
+
+.quoteBy{
+  font-family: Poppins, sans-serif;
+  color: rgb(0,98,148);
+  font-style: normal;
+  font-weight: 700;
+  padding-top: 5px;
+  letter-spacing: 3px;
+  font-size: .8em;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+}
+
+footer{
+  background-color: rgb(0,98,148);
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer{
+  margin: 0 auto;
+  color: rgb(255,255,255);
+  font-family: "Poppins", sans-serif;
+  font-size: .8em;
+  letter-spacing: .3em;
+}
