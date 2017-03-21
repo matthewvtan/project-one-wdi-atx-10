@@ -139,7 +139,7 @@ $("#contact").waypoint(function(direction){
       $('#contactAnimate').addClass('fadeOut');
       $('#contactAnimate').removeClass('fadeIn');   }
 });
-// - - - - - - - T E S T I M O N I A L S - - - - - - -
+// - - - - T E S T I M O N I A L S - - - -
 
 var quotes = $('div[id^="quote-"]').hide(),
     i = 0;
@@ -153,6 +153,6 @@ var quotes = $('div[id^="quote-"]').hide(),
 })();
 
 
-// - - - - - - - - - E N D - - - - - - - - - - - -
+// - - - - - - - - - E N D - - - - - - - - -
 
 });
